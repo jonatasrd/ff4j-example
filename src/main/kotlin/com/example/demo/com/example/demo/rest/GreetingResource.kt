@@ -1,17 +1,15 @@
 package com.example.demo.com.example.demo.rest
 
+import com.example.demo.com.example.demo.model.GreetingService
 import org.ff4j.FF4j
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
-import com.example.demo.com.example.demo.model.GreetingService
-import org.springframework.beans.factory.annotation.Qualifier
-
-
 
 
 @RestController
-class HomeResource {
+class GreetingResource {
 
     @Autowired
     lateinit var ff4j: FF4j
