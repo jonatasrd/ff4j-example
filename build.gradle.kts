@@ -23,6 +23,7 @@ dependencies {
 	implementation("org.ff4j:ff4j-spring-boot-starter:1.8.1")
 	implementation("org.ff4j:ff4j-web:1.8")
 	implementation("org.ff4j:ff4j-aop:1.2.0")
+	implementation("org.thymeleaf:thymeleaf:2.1.4.RELEASE")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 
 }

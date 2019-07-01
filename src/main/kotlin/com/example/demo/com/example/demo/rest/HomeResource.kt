@@ -26,9 +26,9 @@ class HomeResource {
     }
 
     fun getText(): String {
-        return when (ff4j.check("AwesomeFeature")) {
-            true -> "Feature is avaliable"
-            false -> "Feature is not avaliable"
+        return when (ff4j.check("HelloFeature")) {
+            true -> "Feature Hello is avaliable"
+            false -> "Feature Hello is not avaliable"
         }
     }
 

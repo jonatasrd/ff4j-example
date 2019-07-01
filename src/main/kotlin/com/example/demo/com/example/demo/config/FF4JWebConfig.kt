@@ -14,8 +14,8 @@ import org.springframework.context.annotation.Configuration
 
 @Configuration
 @ConditionalOnClass(ConsoleServlet::class, FF4jDispatcherServlet::class)
-@AutoConfigureAfter(FF4JConfiguration::class)
-class FF4JWebConfiguration : SpringBootServletInitializer() {
+@AutoConfigureAfter(FF4JConfig::class)
+class FF4JWebConfig : SpringBootServletInitializer() {
 
     @Bean
     fun servletRegistrationBean(ff4jConsoleServlet: ConsoleServlet): ServletRegistrationBean<*> {
