@@ -17,13 +17,20 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+
+	implementation("mysql:mysql-connector-java")
+	
 	implementation("org.ff4j:ff4j-spring-boot-starter:1.8.1")
 	implementation("org.ff4j:ff4j-web:1.8")
 	implementation("org.ff4j:ff4j-aop:1.2.0")
 	implementation("org.thymeleaf:thymeleaf:2.1.4.RELEASE")
+	implementation("org.ff4j:ff4j-store-springjdbc:1.8.1")
+	
+	
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 
 }

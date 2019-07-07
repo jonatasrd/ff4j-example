@@ -18,7 +18,7 @@ class GreetingResource {
     @Qualifier("greeting.english")
     lateinit var greeting: GreetingService
 
-    @GetMapping("/hello")
+    @GetMapping("/api/hello")
     fun hello(): String {
         return getText()
     }

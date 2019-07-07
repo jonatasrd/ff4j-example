@@ -1,0 +1,15 @@
+version: '3'
+services:
+  lab-mysql:
+    container_name: demo-mysql
+    image: mysql/mysql-server:5.7
+    environment:
+      MYSQL_DATABASE: toggles
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_HOST: '%'
+    ports:
+      - "3306:3306"
+    restart: always
+
+
+#docker run -p 3306:3306 -h 127.0.0.1 --name demo-mysql -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=toggles -d mysql
